@@ -1,0 +1,147 @@
+.Card,
+.CardLabel,
+.CardTitle,
+.CardContainer_UP,
+.CardContainer_DOWN,
+.button_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+/* Style for the Card component in general */
+.Card {
+  background-color: rgb(240, 239, 239);
+  height: auto;
+  margin: 1rem;
+  border-radius: 9px;
+  width: 350px;
+  transition: all 0.85s ease;
+}
+
+.Card:hover,
+.Card:active {
+  box-shadow: 0px 4px 14px #9c8818;
+}
+
+/* Style for the card label  */
+.CardLabel {
+    background: rgb(65,142,217);
+    background: linear-gradient(79deg, rgba(65,142,217,0.8104283949908089) 0%, rgba(0,124,184,1) 100%);
+  height: 80px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  color:white;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+/* Common layout for the entire card infomation container */
+.CardContainer_UP,
+.CardContainer_DOWN,
+.button_section {
+  width: 90%;
+  height: 110px;
+  margin: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Specific style for the upper container */
+.CardContainer_UP {
+  background-color: rgb(255, 255, 255);
+  padding: 3px 0;
+  align-items:start;
+}
+.CardContainer_UP > div:nth-child(1){
+    height: auto;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+.CardContainer_UP > div:nth-child(2){
+    font-size:1.2em;
+    background-color:rgba(255, 255, 255, 0);
+    padding-top: 1px;
+    height:auto;
+}
+
+/* Specific style for the lower container */
+.CardContainer_DOWN {
+  background-color: rgba(223, 223, 223, 0.747);
+  flex-direction: row;
+  justify-content: space-around;
+}
+.CardContainer_DOWN > div:nth-child(1) > div {
+    background-color: rgba(255, 255, 255, 0);
+    color:rgb(196, 19, 19);
+    font-size: 1.2rem;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-right: 1px dotted rgba(87, 87, 87, 0.603);
+    border-radius: 0;
+    padding-right:14px;
+}
+.CardContainer_DOWN > div:nth-child(2) > div {
+    background-color: rgba(255, 0, 0, 0);
+    height: auto;
+    font-size: 0.8rem;
+}
+
+.button_section {
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.CardTitle {
+  background-color: white;
+}
+
+/* Styles for Buttons */
+.button_section {
+    margin-bottom: 10px;
+}
+.Button_Add,
+.Button_Remove {
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(111, 212, 179);
+  color: rgb(7, 80, 40);
+  width: calc(5vw + 40px);
+  height: 1.5rem;
+  font-weight: bold;
+}
+
+.Button_Remove {
+  color: white;
+  background-color: rgb(204, 27, 27);
+}
+
+.Button_Add:hover,
+.Button_Remove:hover {
+  cursor: pointer;
+}
+
+.Button_Add:hover {
+    box-shadow: 1px 0px 2px rgb(0, 110, 33);
+
+}
+.Button_Remove:hover {
+    box-shadow: 1px 0px 1px rgb(122, 0, 0);
+}
+
+/* Styles for Tags */
+.InfoTags {
+    width: auto;
+    height: 40px;
+    border-radius:5px;
+    background-color: rgb(255, 255, 255);
+    color:rgb(25, 28, 68);
+    margin: 3px 0;
+    padding: 8px 15px;
+}
